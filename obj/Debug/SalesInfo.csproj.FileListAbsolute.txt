@@ -1,0 +1,10 @@
+C:\Users\antsve-3\source\repos\SalesInfo\bin\Debug\SalesInfo.exe.config
+C:\Users\antsve-3\source\repos\SalesInfo\bin\Debug\SalesInfo.exe
+C:\Users\antsve-3\source\repos\SalesInfo\bin\Debug\SalesInfo.pdb
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.csprojAssemblyReference.cache
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.Form1.resources
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.Properties.Resources.resources
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.csproj.GenerateResource.cache
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.csproj.CoreCompileInputs.cache
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.exe
+C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.pdb

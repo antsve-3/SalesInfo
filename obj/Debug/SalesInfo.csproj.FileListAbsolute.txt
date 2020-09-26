@@ -8,3 +8,13 @@ C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.csproj.GenerateReso
 C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.csproj.CoreCompileInputs.cache
 C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.exe
 C:\Users\antsve-3\source\repos\SalesInfo\obj\Debug\SalesInfo.pdb
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\bin\Debug\SalesInfo.exe.config
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\bin\Debug\SalesInfo.exe
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\bin\Debug\SalesInfo.pdb
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.csprojAssemblyReference.cache
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.Form1.resources
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.Properties.Resources.resources
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.csproj.GenerateResource.cache
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.csproj.CoreCompileInputs.cache
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.exe
+\\ctx-fs-02.ltuad.ltu.se\CtxRedirects$\antsve-3\Documents\Mina Projekt\SalesInfo\obj\Debug\SalesInfo.pdb

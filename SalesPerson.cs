@@ -10,37 +10,44 @@ namespace SalesInfo
 {
     class SalesPerson
     {
-        private String _name;
-        private String _personnummer;
-        private String _district;
-        private int _soldArticles;
-        public SalesPerson(String name, String personnummer, String district, int soldArticles)
+        //en klass för att hålla säljpersonerna och deras info
+        private String name;
+        private String personalNumber;
+        private String district;
+        private int soldArticles;
+        //hämtar tab-variablen för att använda samma tabavstånd som i Form1-klassen
+        String tab = Form1.Tab;
+
+        //konstruktorn
+        public SalesPerson(String name, String personalNumber, String district, int soldArticles)
         {
-            _name = name;
-            _personnummer = personnummer;
-            _district = district;
-            _soldArticles = soldArticles;
+            this.name = name;
+            this.personalNumber = personalNumber;
+            this.district = district;
+            this.soldArticles = soldArticles;
         }
 
-        //public String getName()
-        //{
-        //    return _name;
-        //}
-        //public String getPersonnummer()
-        //{
-        //    return _personnummer;
-        //}
-        //public String getDistrict()
-        //{
-        //    return _district;
-        //}
-        //public int getSoldArticles()
-        //{
-        //    return _soldArticles;
-        //}
+        //Gör sålda artiklar tillgängliga utanför klassen
+        public int SoldArticles
+        {
+            get
+            {
+                return soldArticles;
+            }
+        }
+
+        public string PersonalNumber
+        {
+            get
+            {
+                return personalNumber;
+            }
+        }
         public String getSalesPersonInfo()
         {
-            String salesPersonInfo = _name + "\t" + _personnummer + "\t" + _district + "\t" + _soldArticles;
+            //metod för att returnera en textsträng med info om säljaren och säljresultat
+            String salesPersonInfo = name + tab + personalNumber + tab 
+                + district + tab + soldArticles + "\r\n";
             return salesPersonInfo;
         }
     }

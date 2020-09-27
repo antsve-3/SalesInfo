@@ -40,13 +40,13 @@
             this.lblSalesResult = new System.Windows.Forms.Label();
             this.btnFilePrint = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbxSalesResults = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 33);
+            this.label1.Location = new System.Drawing.Point(13, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -54,22 +54,24 @@
             // 
             // tbxName
             // 
-            this.tbxName.Location = new System.Drawing.Point(16, 49);
+            this.tbxName.Location = new System.Drawing.Point(16, 36);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(100, 20);
             this.tbxName.TabIndex = 1;
+            this.tbxName.TextChanged += new System.EventHandler(this.tbxName_TextChanged);
             // 
             // tbxSoldArticles
             // 
-            this.tbxSoldArticles.Location = new System.Drawing.Point(382, 49);
+            this.tbxSoldArticles.Location = new System.Drawing.Point(382, 36);
             this.tbxSoldArticles.Name = "tbxSoldArticles";
             this.tbxSoldArticles.Size = new System.Drawing.Size(100, 20);
             this.tbxSoldArticles.TabIndex = 4;
+            this.tbxSoldArticles.TextChanged += new System.EventHandler(this.tbxSoldArticles_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(379, 33);
+            this.label2.Location = new System.Drawing.Point(379, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 13);
             this.label2.TabIndex = 2;
@@ -77,15 +79,16 @@
             // 
             // tbxDistrict
             // 
-            this.tbxDistrict.Location = new System.Drawing.Point(260, 49);
+            this.tbxDistrict.Location = new System.Drawing.Point(260, 36);
             this.tbxDistrict.Name = "tbxDistrict";
             this.tbxDistrict.Size = new System.Drawing.Size(100, 20);
             this.tbxDistrict.TabIndex = 3;
+            this.tbxDistrict.TextChanged += new System.EventHandler(this.tbxDistrict_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(257, 33);
+            this.label3.Location = new System.Drawing.Point(257, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 4;
@@ -93,18 +96,19 @@
             // 
             // tbxPersonalNumber
             // 
-            this.tbxPersonalNumber.Location = new System.Drawing.Point(138, 49);
+            this.tbxPersonalNumber.Location = new System.Drawing.Point(138, 36);
             this.tbxPersonalNumber.Name = "tbxPersonalNumber";
             this.tbxPersonalNumber.Size = new System.Drawing.Size(100, 20);
             this.tbxPersonalNumber.TabIndex = 2;
             this.tbxPersonalNumber.Text = "YYYYMMDDXXXX";
+            this.tbxPersonalNumber.TextChanged += new System.EventHandler(this.tbxPersonalNumber_TextChanged);
             this.tbxPersonalNumber.Enter += new System.EventHandler(this.tbxPersonalNumber_OnFocus);
             this.tbxPersonalNumber.Leave += new System.EventHandler(this.tbxPersonalNumber_DeFocus);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(135, 33);
+            this.label4.Location = new System.Drawing.Point(135, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 13);
             this.label4.TabIndex = 6;
@@ -112,18 +116,18 @@
             // 
             // btnAddSalseInfo
             // 
-            this.btnAddSalseInfo.Location = new System.Drawing.Point(382, 87);
+            this.btnAddSalseInfo.Location = new System.Drawing.Point(382, 65);
             this.btnAddSalseInfo.Name = "btnAddSalseInfo";
             this.btnAddSalseInfo.Size = new System.Drawing.Size(100, 23);
             this.btnAddSalseInfo.TabIndex = 5;
             this.btnAddSalseInfo.Text = "Lägg till säljinfo";
             this.btnAddSalseInfo.UseVisualStyleBackColor = true;
-            this.btnAddSalseInfo.Click += new System.EventHandler(this.button1_Click);
+            this.btnAddSalseInfo.Click += new System.EventHandler(this.btnAddSalesInfo_click);
             // 
             // lblSalesResult
             // 
             this.lblSalesResult.AutoSize = true;
-            this.lblSalesResult.Location = new System.Drawing.Point(13, 154);
+            this.lblSalesResult.Location = new System.Drawing.Point(325, 181);
             this.lblSalesResult.Name = "lblSalesResult";
             this.lblSalesResult.Size = new System.Drawing.Size(35, 13);
             this.lblSalesResult.TabIndex = 9;
@@ -132,13 +136,14 @@
             // 
             // btnFilePrint
             // 
-            this.btnFilePrint.Location = new System.Drawing.Point(382, 117);
+            this.btnFilePrint.Location = new System.Drawing.Point(382, 104);
             this.btnFilePrint.Name = "btnFilePrint";
             this.btnFilePrint.Size = new System.Drawing.Size(100, 23);
             this.btnFilePrint.TabIndex = 6;
             this.btnFilePrint.Text = "Skriv till fil";
             this.btnFilePrint.UseVisualStyleBackColor = true;
             this.btnFilePrint.Visible = false;
+            this.btnFilePrint.Click += new System.EventHandler(this.btnFilePrint_Click);
             // 
             // lblError
             // 
@@ -151,22 +156,22 @@
             this.lblError.Text = "label5";
             this.lblError.Visible = false;
             // 
-            // button1
+            // tbxSalesResults
             // 
-            this.button1.Location = new System.Drawing.Point(382, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "TestKnapp";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.testMethod);
+            this.tbxSalesResults.Location = new System.Drawing.Point(12, 127);
+            this.tbxSalesResults.Multiline = true;
+            this.tbxSalesResults.Name = "tbxSalesResults";
+            this.tbxSalesResults.ReadOnly = true;
+            this.tbxSalesResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxSalesResults.Size = new System.Drawing.Size(303, 150);
+            this.tbxSalesResults.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 289);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbxSalesResults);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnFilePrint);
             this.Controls.Add(this.lblSalesResult);
@@ -200,7 +205,7 @@
         private System.Windows.Forms.Label lblSalesResult;
         private System.Windows.Forms.Button btnFilePrint;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbxSalesResults;
     }
 }
 
